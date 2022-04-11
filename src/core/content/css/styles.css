@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* Estilos globales de la aplicación*/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.img-logo {
+  width: 100%;
+  max-width: 200px;
+}
+/*# sourceMappingURL=styles.css.map */
