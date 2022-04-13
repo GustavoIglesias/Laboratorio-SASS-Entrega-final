@@ -3,10 +3,11 @@
     {
       "id": "1",
       "iban": "ES91 2100 0418 4502 0005 1332",
-      "type": "1",
+      "type": "2",
       "name": "Gastos mes",
-      "balance": 1490,
-      "lastTransaction": "2019-12-09T21:30:00"
+      "balance": "1490 €",
+      "lastTransaction": "2019-12-09T21:30:00",
+      "alias": "Gastos mes"
     },
     {
       "id": "2",

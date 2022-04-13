@@ -10,25 +10,24 @@
   justify-content: center;
 }
 .root > :nth-child(n) > :nth-child(n) {
-  width: 100%;
   max-width: 1200px;
+  width: 100%;
+  /*para que ocupe todo lo que pueda*/
 }
 .root header {
   background-color: #22c6cb;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 .root header .header-subcontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
 }
-.root header img {
-  max-width: 200px;
+.root header .header-subcontainer img {
   width: 100%;
+  max-width: 200px;
 }
 .root header .user {
   color: white;
@@ -38,30 +37,29 @@
 }
 .root header .user::before {
   content: "";
-  background: url(/icon-user.4999b0f6.svg) no-repeat center center;
+  background: url("/icon-user.4999b0f6.svg") no-repeat center center;
   width: 20px;
 }
 .root nav {
   background-color: #232c3b;
 }
-.root nav .navbar-list {
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style-type: none;
+.root .navbar-list {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 40px;
 }
-.root nav .navbar-list > :nth-child(n) {
+.root .navbar-list > :nth-child(n) {
   color: white;
 }
-.root nav .navbar-list > :nth-child(n) a {
+.root .navbar-list > :nth-child(n) a {
   color: white;
   text-decoration: none;
 }
-.root nav .navbar-list .selected {
+.root .navbar-list .selected {
   border-bottom: 5px solid #22c6cb;
   padding-bottom: 5px;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>BANCA ONLINE</title>
+    <title>TRANSFERENCIAS</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -11,59 +11,59 @@
     <link href="../../core/content/css/styles.scss" rel="stylesheet" />
     <link href="./transfer.styles.scss" rel="stylesheet" />
   </head>
-  <body>
+  <body class="root">
     <header>
-      <div>
+      <div class="header-subcontainer">
         <a href="../login/login.html">
           <img src="../../core/content/img/logo_header_white.svg" />
         </a>
-        <p>Bienvenido Sr. Juan López</p>
+        <p class="user">Bienvenido Sr. Juan López</p>
       </div>
     </header>
     <nav>
-      <ul>
+      <ul class="navbar-list">
         <li><a href="../account-list/account-list.html">Mis cuentas</a></li>
         <li><a href="../movements/movements.html">Movimientos</a></li>
-        <li>Transferencias</li>
+        <li class="selected">Transferencias</li>
       </ul>
     </nav>
     <section>
       <div>
-        <div>
-          <h1>Transferencias Nacionales</h1>
+        <div class="title-container">
+          <h1 class="title">Transferencias Nacionales</h1>
         </div>
         <form>
           <fieldset>
-            <div>
+            <div class="field-inline-container">
               <label>Selecciones cuenta de origen (IBAN):</label>
-              <select id="select-account"></select>
+              <select class="field select" id="select-account"></select>
             </div>
-            <p id="accountId-error"></p>
+            <p id="accountId-error" class="error-message"></p>
 
-            <div>
+            <div class="field-inline-container">
               <label>Ingrese el IBAN de destino:</label>
-              <input id="iban" type="text" />
-              <p id="iban-error"></p>
+              <input class="field" id="iban" type="text" />
+              <p id="iban-error" class="error-message"></p>
             </div>
-            <div>
+            <div class="field-inline-container">
               <label>Beneficiario:</label>
-              <input id="name" type="text" />
-              <p id="name-error"></p>
+              <input class="field" id="name" type="text" />
+              <p id="name-error" class="error-message"></p>
             </div>
-            <div>
+            <div class="field-inline-container">
               <label>Importe <strong>(EUR)</strong>:</label>
-              <input id="amount" type="text" />
-              <p id="amount-error"></p>
+              <input class="field" id="amount" type="text" />
+              <p id="amount-error" class="error-message"></p>
             </div>
-            <div>
+            <div class="field-inline-container">
               <label>Concepto:</label>
-              <input id="concept" type="text" />
-              <p id="concept-error"></p>
+              <input class="field" id="concept" type="text" />
+              <p id="concept-error" class="error-message"></p>
             </div>
-            <div>
+            <div class="field-inline-container">
               <label>Observaciones:</label>
-              <input id="notes" type="text" />
-              <p id="notes-error"></p>
+              <input class="field" id="notes" type="text" />
+              <p id="notes-error" class="error-message"></p>
             </div>
           </fieldset>
           <fieldset>
@@ -71,9 +71,10 @@
               Para que la transferencia se realice en otra fecha diferente a la
               de hoy, por favor, indíquenos la fecha de ejecución:
             </p>
-            <div>
+            <div class="field-inline-container">
               <label>Fecha de ejecución:</label>
               <input
+                class="field"
                 id="day"
                 type="number"
                 onfocus="this.placeholder=''"
@@ -81,6 +82,7 @@
               />
               <p>/</p>
               <input
+              class="field"
                 id="month"
                 type="number"
                 onfocus="this.placeholder=''"
@@ -88,32 +90,36 @@
               />
               <p>/</p>
               <input
+                class="field"
                 id="year"
                 type="number"
                 onfocus="this.placeholder=''"
                 placeholder="yyyy"
               />
-              <p id="date-error"></p>
+              <p id="date-error" class="error-message"></p>
             </div>
           </fieldset>
           <fieldset>
             <p>
               Escriba una dirección de email para dar aviso al beneficiario:
             </p>
-            <div>
+            <div class="field-inline-container">
               <label>Email del beneficiario:</label>
-              <input id="email" type="email" />
-              <p id="email-error"></p>
+              <input class="field" id="email" type="email" />
+              <p id="email-error" class="error-message"></p>
             </div>
           </fieldset>
-          <button id="transfer-button" type="button">
+          <div class="field-inline-container">
+            <label></label>
+          <button id="transfer-button" type="button" class="submit-button .field">
             REALIZAR LA TRANSFERENCIA
           </button>
+          </div>
         </form>
       </div>
     </section>
     <footer>
-      <div>
+      <div class="footer-subcontainer">
         <img src="../../core/content/img/logo_footer.svg" />
       </div>
     </footer>

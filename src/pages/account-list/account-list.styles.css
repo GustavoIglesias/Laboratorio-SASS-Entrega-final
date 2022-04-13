@@ -80,7 +80,7 @@
   background-color: #232c3b;
 }
 
-.root nav .navbar-list {
+.root .navbar-list {
   list-style: none;
   margin: 10px 0;
   padding: 0;
@@ -97,16 +97,16 @@
   gap: 40px;
 }
 
-.root nav .navbar-list > :nth-child(n) {
+.root .navbar-list > :nth-child(n) {
   color: white;
 }
 
-.root nav .navbar-list > :nth-child(n) a {
+.root .navbar-list > :nth-child(n) a {
   color: white;
   text-decoration: none;
 }
 
-.root nav .navbar-list .selected {
+.root .navbar-list .selected {
   border-bottom: 5px solid #22c6cb;
   padding-bottom: 5px;
 }
@@ -176,13 +176,13 @@
   font-size: 0.8rem;
 }
 
+.root .account-list .align-right {
+  text-align: right;
+}
+
 .root .account-list .iban > a {
   color: #232c3b;
   font-weight: 600;
-}
-
-.root .account-list .align-right {
-  text-align: right;
 }
 
 .root .account-list .select {

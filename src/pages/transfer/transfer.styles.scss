@@ -1,0 +1,53 @@
+@import '../../core/content/css/breakpoint';
+@import '../../core/content/css/palette';
+@import '../../core/content/css/components';
+@import '../../core/content/css/layout';
+
+
+.root {
+    
+    @include cabecera ($palette-primary-main, $palette-primary-contrast-text);
+
+    @include navmenu ($palette-primary-main, $palette-secondary-main, $palette-secondary-contrast-text);
+   
+    & .title-container{
+        @include contenedor-titulo($palette-secondary-main);
+    
+        & .new-account-button{
+            @include button;
+        }
+    }
+
+
+    
+    & .account-list {
+        @include cabecera-contenido($palette-secondary-main);
+      }
+
+      & form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    
+        @include campo-txt-con-error($palette-error-main);
+    
+        & .submit-button {
+          @include button;
+        }
+    
+        & fieldset {
+          @include fieldSet($palette-secondary-main);
+        }
+    
+        & .field.select {
+          @include select-con-error($palette-error-main);
+        }
+    
+        & .field-inline-container {
+          @include contenedor-campos-form
+        }
+      }
+
+      @include pie($palette-secondary-main);
+  }

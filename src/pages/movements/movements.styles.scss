@@ -1,0 +1,34 @@
+@import '../../core/content/css/breakpoint';
+@import '../../core/content/css/palette';
+@import '../../core/content/css/components';
+@import '../../core/content/css/layout';
+
+
+.root {
+    
+    @include cabecera ($palette-primary-main, $palette-primary-contrast-text);
+
+    @include navmenu ($palette-primary-main, $palette-secondary-main, $palette-secondary-contrast-text);
+   
+    & .title-container{
+        @include contenedor-titulo($palette-secondary-main);
+
+    }
+
+
+    
+    & .account-list {
+        @include cabecera-contenido($palette-secondary-main);
+    
+        @include tabla;
+    
+        & .iban > a {
+          color: $palette-secondary-main;
+          font-weight: 600;
+        }
+    
+
+      }
+
+      @include pie($palette-secondary-main);
+  }

@@ -1,1 +1,189 @@
-/* No CSS *//*# sourceMappingURL=movements.styles.css.map */
+.root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root > :nth-child(n) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.root > :nth-child(n) > :nth-child(n) {
+  max-width: 1200px;
+  width: 100%;
+  /*para que ocupe todo lo que pueda*/
+}
+
+.root header {
+  background-color: #22c6cb;
+  padding: 40px 0;
+}
+
+.root header .header-subcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+
+.root header .header-subcontainer img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.root header .user {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.root header .user::before {
+  content: "";
+  background: url("../../core/content/img/icon-user.svg") no-repeat center center;
+  width: 20px;
+}
+
+.root nav {
+  background-color: #232c3b;
+}
+
+.root .navbar-list {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+.root .navbar-list > :nth-child(n) {
+  color: white;
+}
+
+.root .navbar-list > :nth-child(n) a {
+  color: white;
+  text-decoration: none;
+}
+
+.root .navbar-list .selected {
+  border-bottom: 5px solid #22c6cb;
+  padding-bottom: 5px;
+}
+
+.root .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 5px solid #232c3b;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.root .title-container .title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+
+.root .account-list {
+  width: 100%;
+  margin-top: 5px;
+  color: #232c3b;
+}
+
+.root .account-list thead tr {
+  background-color: #ccc;
+  font-weight: 900;
+}
+
+.root .account-list tbody tr:nth-child(even) {
+  background-color: #eee;
+  font-weight: 300;
+}
+
+.root .account-list td {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+.root .account-list .align-right {
+  text-align: right;
+}
+
+.root .account-list .iban > a {
+  color: #232c3b;
+  font-weight: 600;
+}
+
+.root footer {
+  background-color: #232c3b;
+  padding: 80px;
+  margin-top: 100px;
+}
+
+.root footer .footer-subcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.root footer .footer-subcontainer img {
+  width: 100%;
+  max-width: 200px;
+}
+/*# sourceMappingURL=movements.styles.css.map */

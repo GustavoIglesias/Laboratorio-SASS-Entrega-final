@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>BANCA ONLINE</title>
+    <title>CUANTA BANCARIA</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
     <nav>
       <ul class="navbar-list">
         <li class="selected">
-          <a href="/pages\account-list\account-list.html">Mis cuentas</a>
+          <a>Mis cuentas</a>
         </li>
         <li><a href="/pages\movements\movements.html">Movimientos</a></li>
         <li><a href="/pages\transfer\transfer.html">Transferencias</a></li>
@@ -48,9 +48,12 @@
               <input class="field" id="alias" type="text">
               <p class="error-message" id="alias-error"></p>
             </div>
-            <button class="submit-button" id="save-button" type="submit">
+            <div class="field-inline-container">
+              <label></label>
+            <button class="submit-button .field" id="save-button" type="submit">
               GUARDAR
             </button>
+          </div>
           </fieldset>
         </form>
       </div>
